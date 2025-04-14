@@ -37,17 +37,8 @@ export default function PokedexApp(props) {
         setDetails(data)
     }
 
-    const [number, setNumber] = useState(1)
-    const handleClickMinus = () => {
-        setNumber(number-1)
-    }
-    const handleClickPlus = () => {
-        setNumber(number+1)
-    }
-
-
     return(
-        <div className="flex justify-center items-center">
+        <div className="">
             <div>
                 <button onClick={handleClickMinus}>-</button>
                 <p>{number}</p>

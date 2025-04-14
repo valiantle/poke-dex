@@ -1,4 +1,5 @@
 export default function PokemonDetails({pokemon}) {
+
     const capitalizeFirstLetter = (string) => {
         if(!string) return'';
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -24,7 +25,6 @@ export default function PokemonDetails({pokemon}) {
         water: {bgelement: "/images/water.png", bgcolor: " bg-blue-400 "}
     }
     const types = pokemon.types.map((type) => type.type.name);
-    console.log(types)
 
     let leftBox
     let rightBox
